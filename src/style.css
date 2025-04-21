@@ -1,5 +1,115 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 20px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.card{
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.card p{
+    text-align: center;
+    font: 140px/120px Arial serif;
+    margin: 0;
+    
+}
+
+/*************************** CORAZONES ***************************/
+
+.heart{
+    color: red;
+}
+
+.heart ::before{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    content: "♥";
+}
+
+.heart ::after{
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    content: "♥";
+    transform: rotate(180deg);
+}
+
+/*************************** TREBOLES ***************************/
+
+.club {
+    color: black;
+}
+
+.club ::before{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    content: "♣";
+}
+
+.club ::after{
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    content: "♣";
+    transform: rotate(180deg);
+}
+
+/*************************** DIAMANTES ***************************/
+
+.diamond {
+    color: red;
+}
+
+.diamond ::before{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    content: "♦";
+}
+
+.diamond ::after{
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    content: "♦";
+    transform: rotate(180deg);
+}
+
+/*************************** PICAS ***************************/
+
+.spade {
+    color: black;
+}
+
+.spade ::before{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    content: "♠";
+}
+
+.spade ::after{
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    content: "♠";
+    transform: rotate(180deg);
 }
